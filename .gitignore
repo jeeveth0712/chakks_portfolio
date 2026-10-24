@@ -1,0 +1,26 @@
+# Secrets: never commit API keys
+.env
+.env.*
+
+# Tooling, not part of the website
+gemini-skills-main/
+
+# Videos no page uses (raw Gemini output, earlier ffmpeg upscale)
+Generated Video*.mp4
+IMG_2118-HD.mp4
+
+# Output folder the Gemini video scripts create
+media/
+
+# Python leftovers
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
