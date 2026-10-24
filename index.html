@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfolio Versions — Chakkaravarthy Rajagopal</title>
+<meta name="description" content="Four versions of the Chakkaravarthy Rajagopal portfolio hero: HD or original video, looping or intro-then-photo.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230d0d0d'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='monospace' font-size='21' font-weight='600' fill='%23f4f2ee'%3ECR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4f2ee;--card:#fff;--ink:#0d0d0d;--ink-2:#3a3a3a;--mute:#77756f;--faint:#a9a6a0;--line:rgba(13,13,13,.1);
+  --ease:cubic-bezier(.16,1,.3,1);--gutter:clamp(16px,4vw,64px);
+  --sans:"Instrument Sans","Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  --serif:"Instrument Serif",Georgia,serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--paper);color:var(--ink);-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased}
+body{margin:0;font-family:var(--sans);font-size:16px;line-height:1.55}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:6px}
+
+.wrap{max-width:1120px;margin-inline:auto;padding:clamp(40px,8vh,96px) var(--gutter) 64px}
+.brand{display:inline-flex;align-items:center;gap:12px;font-weight:600;letter-spacing:-.02em}
+.brand i{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--ink);font:500 12px var(--mono);font-style:normal}
+
+.head{margin:clamp(40px,7vh,72px) 0 clamp(28px,5vh,48px);max-width:680px}
+.tag{margin:0;font:400 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+h1{margin:14px 0 0;font-weight:700;letter-spacing:-.045em;line-height:1;font-size:clamp(38px,5.2vw,64px)}
+h1 em{font-family:var(--serif);font-weight:400;color:var(--mute);letter-spacing:-.02em}
+.lede{margin:18px 0 0;color:var(--ink-2);max-width:60ch}
+
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{position:relative;display:flex;flex-direction:column;gap:14px;padding:28px;border-radius:20px;background:var(--card);box-shadow:inset 0 0 0 1px var(--line);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.card:hover{transform:translateY(-3px);box-shadow:inset 0 0 0 1px rgba(13,13,13,.18),0 30px 60px -30px rgba(13,13,13,.22)}
+.card.rec{box-shadow:inset 0 0 0 1.5px var(--ink)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:24px}
+.num{font:500 12px var(--mono);color:var(--faint)}
+.badge{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:var(--ink);color:#fff}
+h2{margin:0;font-size:24px;font-weight:700;letter-spacing:-.03em;line-height:1.15}
+h2 em{font-family:var(--serif);font-weight:400;font-size:1.1em;color:var(--mute);letter-spacing:-.01em}
+.card p{margin:0;color:var(--ink-2)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.pills li{font:400 11.5px var(--mono);letter-spacing:.03em;color:var(--mute);padding:5px 10px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line)}
+.go{margin-top:auto;padding-top:6px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid var(--line)}
+.go span{font:400 11.5px var(--mono);color:var(--faint);overflow-wrap:anywhere;padding-top:12px}
+.go b{flex:none;font-weight:500;padding-top:12px;white-space:nowrap}
+.card a::after{content:"";position:absolute;inset:0;border-radius:inherit}
+
+.notes{margin:40px 0 0;padding:24px 0 0;border-top:1px solid var(--line);display:grid;gap:8px;color:var(--mute);font-size:14px;max-width:72ch}
+.notes p{margin:0}
+.notes b{color:var(--ink-2);font-weight:500}
+
+@media (max-width:760px){.grid{grid-template-columns:1fr}.card{padding:22px}}
+@media (prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <span class="brand"><i>CR</i>Chakkaravarthy Rajagopal</span>
+
+  <header class="head">
+    <p class="tag">Portfolio · hero video versions</p>
+    <h1>Pick a <em>version.</em></h1>
+    <p class="lede">The same portfolio in four variations. They differ only in the opening section: which video plays behind the title, and whether it loops or hands over to the portrait photo.</p>
+  </header>
+
+  <div class="grid">
+    <article class="card rec">
+      <div class="top"><span class="num">01</span><span class="badge">Recommended</span></div>
+      <h2>HD video, <em>looping</em></h2>
+      <p>The sharpened 1080p video plays continuously behind the title. Sound comes on with the first tap or click, or the “Play sound” button.</p>
+      <ul class="pills"><li>1080p</li><li>Loops forever</li><li>iPhone-ready</li></ul>
+      <a class="go" href="chakkaravarthy-portfolio-v4-hd-video-loop.html"><span>v4-hd-video-loop</span><b>Open →</b></a>
+    </article>
+
+    <article class="card">
+      <div class="top"><span class="num">02</span></div>
+      <h2>HD video, <em>then photo</em></h2>
+      <p>The 1080p video plays once, then fades into the portrait photo. A “Replay with sound” button brings the video back.</p>
+      <ul class="pills"><li>1080p</li><li>Plays once → photo</li><li>iPhone-ready</li></ul>
+      <a class="go" href="chakkaravarthy-portfolio-v4-hd-video-intro.html"><span>v4-hd-video-intro</span><b>Open →</b></a>
+    </article>
+
+    <article class="card">
+      <div class="top"><span class="num">03</span></div>
+      <h2>Original video, <em>looping</em></h2>
+      <p>Same as version 01, using the original 720p video. A little softer, but exactly as first generated.</p>
+      <ul class="pills"><li>720p</li><li>Loops forever</li></ul>
+      <a class="go" href="chakkaravarthy-portfolio-v3-video-loop.html"><span>v3-video-loop</span><b>Open →</b></a>
+    </article>
+
+    <article class="card">
+      <div class="top"><span class="num">04</span></div>
+      <h2>Original video, <em>then photo</em></h2>
+      <p>Same as version 02, using the original 720p video: it plays once, then fades into the portrait photo.</p>
+      <ul class="pills"><li>720p</li><li>Plays once → photo</li></ul>
+      <a class="go" href="chakkaravarthy-portfolio-v3-video-intro.html"><span>v3-video-intro</span><b>Open →</b></a>
+    </article>
+  </div>
+
+  <div class="notes">
+    <p><b>Sound:</b> browsers start videos muted, so sound turns on after the first tap, click or key press, or from the sound button.</p>
+    <p><b>iPhone-ready:</b> versions 01 and 02 also turn sound on from a tap on empty space, and show a still frame when Low Power Mode blocks autoplay.</p>
+  </div>
+</main>
+</body>
+</html>
